@@ -20,5 +20,7 @@ public class Lab2_2 {
 
         System.out.println("your number is " + numberCharacter);
 
+
+
     }
 }
