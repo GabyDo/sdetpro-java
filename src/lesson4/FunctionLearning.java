@@ -23,6 +23,8 @@ public class FunctionLearning {
      * a set of instruction to do a task
      * start with a verb- camelCase
      * function must be meaning full/express what it does
+     * single responsibility
+     *
      */
 
     //access modifier (public) class method (static) return type (void)- function name(parameter `..p2)

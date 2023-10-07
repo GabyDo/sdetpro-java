@@ -26,12 +26,11 @@ public class DoWhileLoopLearning {
                 break;
             }
             guessingTime++;
-        } while ( guessingTime < MAX_GUESSING_TIME);
+        } while (guessingTime < MAX_GUESSING_TIME);
 
         if (guessingTime == MAX_GUESSING_TIME) {
             System.out.println("chuc ban may man lan sau :d");
         }
     }
-
 
 }
