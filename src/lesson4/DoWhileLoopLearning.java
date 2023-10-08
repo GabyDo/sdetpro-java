@@ -32,5 +32,4 @@ public class DoWhileLoopLearning {
             System.out.println("chuc ban may man lan sau :d");
         }
     }
-
 }

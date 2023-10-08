@@ -1,6 +1,5 @@
 package lesson2;
 
-import javax.security.sasl.SaslClient;
 import java.util.Scanner;
 
 public class TenerryOperater {
@@ -9,6 +8,12 @@ public class TenerryOperater {
         System.out.println("please input arrival time: ");
         int inputArrivalTime = scanner.nextInt();
 
-        boolean isHeOnTime = (inputArrivalTime == 7)? true :false;
+        //comparison operator: == , !=, >, <, >==, <==
+        //input arrival time = 7 hay khong, true cong khong thi false
+        boolean isHeOnTime = (inputArrivalTime == 7) ? true : false;
+
+        // co the them dieu kien  ben trong ngoặc tron
+        // boolean isHeOnTime = (inputArrivalTime == 7)? true :( 2==2 ? true: false));
+
     }
 }
