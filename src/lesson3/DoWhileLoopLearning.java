@@ -1,16 +1,19 @@
-package lesson4;
+package lesson3;
 
 import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class DoWhileLoopLearning {
-    /**
-     * Allow user to have 3 guess from 0-9
-     * if matched -> hoooray
-     * eles: Good luck
-     * do while: lam xong roi moi check dieu kien
-     */
+
     public static void main(String[] args) {
+
+        /**
+         * Allow user to have 3 guess from 0-9
+         * if matched -> hoooray
+         * eles: Good luck
+         * do while: lam xong roi moi check dieu kien
+         */
+
         int randomNumber = new SecureRandom().nextInt(10);
         System.out.println("magic number " + randomNumber);
         int guessingTime = 0;
