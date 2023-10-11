@@ -47,7 +47,19 @@ public class StringLearning {
         System.out.println(Arrays.toString(url.split("oo"))); // tra ve array cua tring o ben trong
 
 //concat
+
+
         //Regular expression | Regex
+        String cookingTimeStr = "105 mins";
+        //[]  tat ca,
+        //^khong phai tu 0-9 (^0-9) thi thay the bang ""
+        String cookingTimeNumStr = cookingTimeStr.replaceAll("[^0-9]", "") ;
+        //tu Aa dn Za
+        String cookingTimeNumStr1 = cookingTimeStr.replaceAll("[^Aa -Zz]", "") ;
+
+
+       int cookingNumber  = Integer.parseInt(cookingTimeStr); // dung de doi tu string qua int
+
 
 
     }
