@@ -11,7 +11,9 @@ public class Lab6_4 {
          */
         String url = "https://google.com";
         System.out.println(url.indexOf(":"));
-
+        System.out.println( "protocol is " + url.substring(0,url.indexOf(":")));
+        System.out.println("domain is " + url.substring(url.indexOf("//") +2, url.indexOf(".")));
+        System.out.println("last element is " + url.substring(url.indexOf(".")));
 
     }
 }
