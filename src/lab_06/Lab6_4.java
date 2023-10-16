@@ -8,12 +8,26 @@ public class Lab6_4 {
 
          http hay https nam truoc dau :
          .com hay .net dem tu duoi len
+         *  xem cos http in ra ssle enable
+         * dmain name laf goolge.com
+         * this is a .com domanin
+         *
+         * SSL enable = true/false
+         * doemain name is: google.com
+         * this a .com domain
          */
         String url = "https://google.com";
-        System.out.println(url.indexOf(":"));
-        System.out.println( "protocol is " + url.substring(0,url.indexOf(":")));
-        System.out.println("domain is " + url.substring(url.indexOf("//") +2, url.indexOf(".")));
-        System.out.println("last element is " + url.substring(url.indexOf(".")));
 
+        int sslEndIndex = url.indexOf(":");
+        String sslString  =  url.substring(0, sslEndIndex);
+        Boolean    sslEnable = sslString.equals("https") ? true : false;
+        System.out.println("ssl enable is: " + sslEnable);
+
+        int startDomainNameIndex = url.indexOf("//") +2;
+        String domainName = url.substring(startDomainNameIndex) ;
+        System.out.println("domain name is: " +  domainName);
+
+        String domain = url.endsWith(".com") ? ".com" : ".net";
+        System.out.println("this is a " + domain);
     }
 }

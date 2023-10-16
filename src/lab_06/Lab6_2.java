@@ -37,6 +37,6 @@ public class Lab6_2 {
     private static String userInputPassword() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("please enter your pwd");
-        return  scanner.next();
+        return  scanner.next(); //scanner.nextLine();
     }
 }
