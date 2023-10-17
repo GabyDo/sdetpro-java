@@ -6,9 +6,11 @@ public class TestEmployeeController {
     public static void main(String[] args) {
         /**
          * Fetch data from db
-         *
+         * select * from employee where position type = PTE
+         * convert data into object
          */
-        // 2 PTE
+
+        // 2 PTEs
         Employee teo = new PTE();
         Employee ti = new PTE();
         Employee tun = new PTE();
@@ -20,7 +22,7 @@ public class TestEmployeeController {
         //1 CEO
         Employee ceo = new CLevelEmp();
 
-        int totalSalary = EmployeeController.totalSalary(Arrays.asList(teo,ti, tun, heo, ga, ceo));
+        int totalSalary = EmployeeController.getTotalSalary(Arrays.asList(teo,ti, tun, heo, ga, ceo));
 
         System.out.println("total salary is: " + totalSalary);
     }

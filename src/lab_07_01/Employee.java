@@ -1,9 +1,12 @@
 package lab_07_01;
 
 public class Employee {
+    //class level/ class scope
     private String name;
     private int salary;
 
+   //noi lap trinh vien xu ly dac biet init khi khoi tao 1 gia tri dac biet nao do.
+    //new ..
     public Employee() {
     }
 

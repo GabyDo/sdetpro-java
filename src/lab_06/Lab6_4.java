@@ -29,5 +29,6 @@ public class Lab6_4 {
 
         String domain = url.endsWith(".com") ? ".com" : ".net";
         System.out.println("this is a " + domain);
+
     }
 }

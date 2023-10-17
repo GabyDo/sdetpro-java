@@ -2,13 +2,13 @@ package lab_07_01;
 
 import java.util.List;
 
-public class EmployeeController {
- public static int totalSalary(List<Employee> employeeList ) {
+public class EmployeeController { // xu ly model, process model
+    public static int getTotalSalary(List<Employee> employeeList) {
+        int totalSalary = 0;
+        for (Employee employee : employeeList) {
+            totalSalary = totalSalary + employee.getSalary();
+        }
 
-    int totalSalary = 0;
-
-
-
-    return totalSalary;
- }
+        return totalSalary;
+    }
 }
