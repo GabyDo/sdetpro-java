@@ -4,10 +4,10 @@ import java.util.List;
 
 public class TestRacingController {
     public static void main(String[] args) {
-        List<Animal> animalList = List.of(new Horse(), new Tiger());
+        List<Animal> animalList = List.of(new Horse(), new Tiger(), new Dog());
 
         Animal winner = RacingController.getWinner(animalList);
-        System.out.println("winner is" +  winner.getName());
+        System.out.printf("winner is: %s, with speed: %d ", winner.getName(), winner.getSpeed());
     }
 }
 
